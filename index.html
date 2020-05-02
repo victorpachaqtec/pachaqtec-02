@@ -3,325 +3,365 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.min.css">
+    <link rel="stylesheet" href="styles/main.css">
     <title>Blog</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="pq-container">
+        <nav>
+          <ul class="menu-nav">
+            <li><a href="#" class="logo"><img src="images/icon-logo-header.png" alt="Logo"></a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Espectáculos</a></li>
+            <li><a href="#">Deportes</a></li>          
+          </ul>
+        </nav>
+      </div>      
+    </header>
     <main>
       <!-- Título -->
       <section class="seccion-titulo">
-        <h1>Blog Noticias</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
+        <div class="pq-container">
+          <h1 class="titulo-blog">Blog Noticias</h1>
+          <p class="descripcion-blog">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>        
       </section>
 
       <!-- Búsqueda -->
       <section class="seccion-busqueda">
-        <div class="grupo-input-icon">
-          <i class="icon-search"></i>
-          <input type="text" class="input-form-control"
-                  type="text"
-                  required
-                  name="busqueda"
-                  id="busqueda"
-                  maxlength="100"
-                  placeholder="Nombre"
-                  pattern="[a-zA-Z]*"
-                  oninvalid="setCustomValidity('Solo admite texto. ')"
-                  oninput="setCustomValidity('')"
-                />
-        </div>
+        <div class="pq-container">
+          <div class="grupo-input-icon">
+            <img class="icon-search" src="images/icon_search.png" alt="Búsqueda">
+            <input type="text" class="input-form-control"
+                    type="text"
+                    required
+                    name="busqueda"
+                    id="busqueda"
+                    maxlength="100"
+                    placeholder="Search Article"
+                    pattern="[a-zA-Z]*"
+                    oninvalid="setCustomValidity('Solo admite texto. ')"
+                    oninput="setCustomValidity('')"
+                  />
+          </div>
+        </div>        
       </section>
 
       <!-- Popular -->
       <section class="seccion-popular">
-        
-        <article class="article-blog">
-          <div class="contenido">
-            <div class="contenido-main">
-              <h3>Feugiat sodales at nullam tellus.</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div class="contenido-footer">
-                <div class="footer-autoria">
-                    <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                    <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+        <div class="pq-container">
+          <h2 class="titulo-seccion">POPULAR</h2>
+          <div class="article-principal">
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
                 </div>
-                <div class="footer-shared">
-                    <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                    <img src="images/icon-share.png" alt="Share" />
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
                 </div>
-            </div>
+              </div>            
+              <img class="imagen-principal img-principal" src="images/article-principal.png" alt="Artículo" />            
+            </article>
           </div>
-          <img class="imagen-principal" src="images/article-principal.png" alt="Artículo" />
-        </article>
-
-        <div class="article-vertical">
-          <article class="article-blog">
-            <div class="contenido">
-              <div class="contenido-main">
-                <h3>Feugiat sodales at nullam tellus.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                  posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+  
+          <div class="article-vertical">
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
+                </div>
               </div>
-              <div class="contenido-footer">
-                  <div class="footer-autoria">
-                      <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                      <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
-                  </div>
-                  <div class="footer-shared">
-                      <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                      <img src="images/icon-share.png" alt="Share" />
-                  </div>
+              <img class="imagen-principal" src="images/article-a.png" alt="Artículo" />
+            </article>
+            
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
+                </div>
               </div>
-            </div>
-            <img class="imagen-principal" src="images/article-a.png" alt="Artículo" />
-          </article>
+              <img class="imagen-principal" src="images/article-b.png" alt="Artículo" />
+            </article>
+            
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
+                </div>
+              </div>
+              <img class="imagen-principal" src="images/article-c.png" alt="Artículo" />
+            </article>
+          </div>
+  
+          <div class="article-vermas">
+            <a href="#">See All Popular Article</a>
+          </div>
           
-          <article class="article-blog">
-            <div class="contenido">
-              <div class="contenido-main">
-                <h3>Feugiat sodales at nullam tellus.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                  posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div class="contenido-footer">
-                  <div class="footer-autoria">
-                      <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                      <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
-                  </div>
-                  <div class="footer-shared">
-                      <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                      <img src="images/icon-share.png" alt="Share" />
-                  </div>
-              </div>
-            </div>
-            <img class="imagen-principal" src="images/article-b.png" alt="Artículo" />
-          </article>
-          
-          <article class="article-blog">
-            <div class="contenido">
-              <div class="contenido-main">
-                <h3>Feugiat sodales at nullam tellus.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                  posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div class="contenido-footer">
-                  <div class="footer-autoria">
-                      <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                      <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
-                  </div>
-                  <div class="footer-shared">
-                      <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                      <img src="images/icon-share.png" alt="Share" />
-                  </div>
-              </div>
-            </div>
-            <img class="imagen-principal" src="images/article-c.png" alt="Artículo" />
-          </article>
-        </div>
-
-        <div class="article-vermas">
-          <a href="#">See All Popular Article</a>
-        </div>
+        </div>        
       </section>
 
       <!-- Allarticle -->
       <section class="seccion-allarticle">        
-        <div class="article-horizontal">
-          <article class="article-blog">
-            <div class="contenido">
-              <div class="contenido-main">
-                <h3>Feugiat sodales at nullam tellus.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                  posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+        <div class="pq-container">
+          <h2 class="titulo-seccion">POPULAR</h2>
+          <div class="article-horizontal">
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
+                </div>
               </div>
-              <div class="contenido-footer">
-                  <div class="footer-autoria">
-                      <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                      <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
-                  </div>
-                  <div class="footer-shared">
-                      <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                      <img src="images/icon-share.png" alt="Share" />
-                  </div>
+              <img class="imagen-principal" src="images/article-d.png" alt="Artículo" />
+            </article>
+    
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
+                </div>
               </div>
-            </div>
-            <img class="imagen-principal" src="images/article-d.png" alt="Artículo" />
-          </article>
-  
-          <article class="article-blog">
-            <div class="contenido">
-              <div class="contenido-main">
-                <h3>Feugiat sodales at nullam tellus.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                  posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+              <img class="imagen-principal" src="images/article-e.png" alt="Artículo" />
+            </article>
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
+                </div>
               </div>
-              <div class="contenido-footer">
-                  <div class="footer-autoria">
-                      <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                      <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
-                  </div>
-                  <div class="footer-shared">
-                      <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                      <img src="images/icon-share.png" alt="Share" />
-                  </div>
+              <img class="imagen-principal" src="images/article-f.png" alt="Artículo" />
+            </article>
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
+                </div>
               </div>
-            </div>
-            <img class="imagen-principal" src="images/article-e.png" alt="Artículo" />
-          </article>
-          <article class="article-blog">
-            <div class="contenido">
-              <div class="contenido-main">
-                <h3>Feugiat sodales at nullam tellus.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                  posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+              <img class="imagen-principal" src="images/article-g.png" alt="Artículo" />
+            </article>
+            <article class="article-blog">
+              <div class="contenido">
+                <div class="contenido-main">
+                  <h3>Feugiat sodales at nullam tellus.</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                    posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+                <div class="contenido-footer">
+                    <div class="footer-autoria">
+                        <h4 class="footer-autoria-autor">Victor Reátegui</h4>
+                        <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
+                    </div>
+                    <div class="footer-shared">
+                        <img src="images/icon-bookmark.png" alt="Bookmark"/>
+                        <img src="images/icon-share.png" alt="Share" />
+                    </div>
+                </div>
               </div>
-              <div class="contenido-footer">
-                  <div class="footer-autoria">
-                      <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                      <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
-                  </div>
-                  <div class="footer-shared">
-                      <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                      <img src="images/icon-share.png" alt="Share" />
-                  </div>
-              </div>
-            </div>
-            <img class="imagen-principal" src="images/article-f.png" alt="Artículo" />
-          </article>
-          <article class="article-blog">
-            <div class="contenido">
-              <div class="contenido-main">
-                <h3>Feugiat sodales at nullam tellus.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                  posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div class="contenido-footer">
-                  <div class="footer-autoria">
-                      <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                      <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
-                  </div>
-                  <div class="footer-shared">
-                      <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                      <img src="images/icon-share.png" alt="Share" />
-                  </div>
-              </div>
-            </div>
-            <img class="imagen-principal" src="images/article-g.png" alt="Artículo" />
-          </article>
-          <article class="article-blog">
-            <div class="contenido">
-              <div class="contenido-main">
-                <h3>Feugiat sodales at nullam tellus.</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
-                  posuere nibh tempor fringilla porta pellentesque ipsum. Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                  eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-              </div>
-              <div class="contenido-footer">
-                  <div class="footer-autoria">
-                      <h4 class="footer-autoria-autor">Victor Reátegui</h4>
-                      <h4 class="footer-autoria-fecha">May 5, 3 min read</h4>
-                  </div>
-                  <div class="footer-shared">
-                      <img src="images/icon-bookmark.png" alt="Bookmark"/>
-                      <img src="images/icon-share.png" alt="Share" />
-                  </div>
-              </div>
-            </div>
-            <img class="imagen-principal" src="images/article-h.png" alt="Artículo" />
-          </article>
-        </div>
-        <div class="paginator">
-          <div class="anterior">
-            <img src="images/arrow-paginator" class="icon-anterior" alt="">
-            <a href="#" class="paginador-boton">Old Post</a>
+              <img class="imagen-principal" src="images/article-h.png" alt="Artículo" />
+            </article>
           </div>
-          <div class="siguiente">
-            <img src="images/arrow-paginator" class="icon-siguiente" alt="">
-            <a href="#" class="paginador-boton">Old Post</a>
+          <div class="paginator">
+            <div class="anterior">
+              <img src="images/arrow-paginator.png" class="icon-anterior" alt="">
+              <a href="#" class="paginador-boton">Old Post</a>
+            </div>
+            <div class="siguiente">
+              <a href="#" class="paginador-boton">Old Post</a>
+              <img src="images/arrow-paginator.png" class="icon-siguiente" alt="">
+            </div>
           </div>
         </div>
       </section>
       
       <!-- Interested to work -->
       <section class="seccion-trabajo">
-        <div class="parrafo-informativo">
-          <h2>Intersted to woek with our team?</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="pq-container">
+          <div class="parrafo-informativo">
+            <h2>Intersted to woek with our team?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          </div>
+          <div class="bloque-accion">
+            <button class="btn-hablemos">Let’s Talk</button>
+          </div>
         </div>
-        <button class="btn-hablemos">Let’s Talk</button>
       </section>
     </main>
     <footer class="seccion-footer">
-      <div class="columna-footer">
-        <img src="images/icon-logo-footer.png" alt="">
-        <div class="media">
-          <div class="item">A.</div>
-          <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+      <div class="pq-container">
+        <div class="columna-footer">
+          <img src="images/icon-logo-footer.png" alt="">
+          <div class="media">
+            <div class="item">A.</div>
+            <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+          </div>
+          <div class="media">
+            <div class="item">T.</div>
+            <div class="item">+62-812-7313-4321.</div>
+          </div>
+          <div class="media">
+            <div class="item">E.</div>
+            <div class="item">hello.afrian@gmail.com</div>
+          </div>
+        </div>
+        <div class="columna-footer">
+          <h3>About US</h3>
+          <a href="#" class="media">About</a>        
+          <a href="#" class="media">What We Do</a>        
+          <a href="#" class="media">Project</a>        
+          <a href="#" class="media">How It Work With Us</a>        
+        </div>
+        <div class="columna-footer">
+          <h3>Follow US</h3>
+          <a href="#" class="media">Instagram</a>        
+          <a href="#" class="media">Facebook</a>        
+          <a href="#" class="media">LinkedIn</a>        
+          <a href="#" class="media">Youtube</a>        
         </div>
       </div>
-      <div class="columna-footer">
-        <h3>About US</h3>
-        <div class="media">About</div>        
-        <div class="media">What We Do</div>        
-        <div class="media">Project</div>        
-        <div class="media">How It Work With Us</div>        
-      </div>
-      <div class="columna-footer">
-        <h3>Follow US</h3>
-        <div class="media">Instagram</div>        
-        <div class="media">Facebook</div>        
-        <div class="media">LinkedIn</div>        
-        <div class="media">Youtube</div>        
-      </div>
+      
     </footer>
   </body>
 </html>
